@@ -3,7 +3,7 @@ const router = express.Router()
 const fs = require('fs')
 
 
-//get all customers
+//get all contests
 router.get('/', (req, res) => {
   fs.readFile('./json_data/contests.json', 'utf8', (err, data) => {
     if (err) {
